@@ -2,140 +2,160 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ACM-CEG Student Chapter</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ACM-CEG Student Chapter</title>
 
-  <!-- Bootstrap CSS-->
-  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-  <!-- Font Awesome CSS-->
-  <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
- 
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700%7CRoboto:400,700,300">
- 
-  
-  <link rel="stylesheet" href="css/styles.css">
+	<!-- Bootstrap CSS-->
+	<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+	<!-- Font Awesome CSS-->
+	<link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+	
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700%7CRoboto:400,700,300">
+	
+	
+	<link rel="stylesheet" href="css/styles.css">
 
-    <link rel="icon" href="img/LOGO_white.png" type="image/icon type">
+	<link rel="icon" href="img/LOGO_white.png" type="image/icon type">
+	<link href="assets/aos/aos.css" rel="stylesheet">
+	<link href="assets/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+	<link href="assets/glightbox/css/glightbox.min.css" rel="stylesheet">
+	<link href="assets/swiper/swiper-bundle.min.css" rel="stylesheet">
 </head>
 
 <body>
-    <div class="spinner-wrapper">
-        <div class="spinner"></div>
-        <h1>Loading</h1>
-    </div>
+	<div class="spinner-wrapper">
+		<div class="spinner"></div>
+		<h1>Loading</h1>
+	</div>
 
-     <!-- Contact-->
-     <section class="ftco-section">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-md-6 text-center mb-5">
-					<h2 class="heading-section">CONTACT US</h2>
+	<!-- ======= Header ======= -->
+	<header id="header" class="d-flex align-items-center ">
+		<div class="container-fluid container-xxl d-flex align-items-center">
+	
+			<div id="logo" class="me-auto">
+				<!-- <a href="index.html" class="scrollto">
+									<h1>ACM CEG</h1>
+								</a> -->
+				<a class="navbar-brand ml-auto" href="./index.html"><img src='img/LOGO_white.png' height="70px" width="auto"
+						alt="logo" /></a>
+			</div>
+			<nav id="navbar" class="navbar order-last order-lg-0">
+				<ul>
+					<li><a class="nav-link scrollto active" href="#home">Home</a></li>
+					<li><a class="nav-link scrollto" href="./about.html">About</a></li>
+					<li><a class="nav-link scrollto" href="./team.html">Team</a></li>
+					<li><a class="nav-link scrollto" href="#schedule">Events</a></li>
+					<li><a class="nav-link scrollto" href="#gallery">Gallery</a></li>
+				</ul>
+				<i class="bi bi-list mobile-nav-toggle"></i>
+			</nav>
+			<!-- navbar -->
+			<a class="contact-us scrollto" href="#contact-us">Contact us</a>
+		</div>
+	</header>
+	<!-- End Header -->
+<br>
+
+<div class="container">
+	<div class="row ">
+		<div class="col-12 col-sm-8 offset-sm-2 text-center">
+			<h1 style="color:black; font-weight: bold;padding-top: 100px;"><strong>Greetings from ACM-CEG!!</strong>
+			</h1>
+
+		</div>
+	</div>
+	</div>
+<div class="container">
+	<div class="cont row row-content">
+		<div class="col-12 col-sm-10 offset-sm-1" style="color:black">
+			<div class="text-center mt-10" style="padding-top: 30px;">
+				<h2>
+					<blockquote class="blockquote"
+						style="font-size: xx-large; font-weight: bolder; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">
+						<strong>Our Motive</strong>
+					</blockquote>
+				</h2>
+				<h5><i id='motive'><q>We aim to motivate students to embark on a journey of learning and developing
+							the
+							tools of computer science and instilling in them a passion for computer science.We serve
+							to
+							clear the clutter and provide guidance to help them to achieve their goals</q></i></h5>
 				</div>
 			</div>
-			<div class="row justify-content-center">
-				<div class="col-lg-10 col-md-12">
-					<div class="wrapper">
-						<div class="row no-gutters">
-							<div class="col-md-7 d-flex align-items-stretch">
-								<div class="contact-wrap w-100 p-md-5 p-4">
-									<h3 class="mb-4">Get in touch</h3>
-									<div id="form-message-warning" class="mb-4"></div> 
-				    
-									<form method="POST" id="contactForm" name="contactForm">
-										<div class="row">
-											<div class="col-md-6">
-												<div class="form-group">
-													<input type="text" class="form-control" name="name" id="name" placeholder="Name" required>
-												</div>
-											</div>
-											<div class="col-md-6"> 
-												<div class="form-group">
-													<input type="email" class="form-control" name="email" id="email" placeholder="Email" required>
-												</div>
-											</div>
-											<div class="col-md-12">
-												<div class="form-group">
-													<input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
-												</div>
-											</div>
-											<div class="col-md-12">
-												<div class="form-group">
-													<textarea name="message" class="form-control" id="message" cols="30" rows="7" placeholder="Message" required></textarea>
-												</div>
-											</div>
-											<div class="col-md-12">
-												<div class="form-group">
-													<input type="submit" value="Send Message" class="btn btn-primary">
-													<div class="submitting"></div>
-												</div>
-											</div>
-										</div>
-									</form>
-								</div>
-							</div>
-							<div class="col-md-5 d-flex align-items-stretch">
-								<div class="info-wrap bg-primary w-100 p-lg-5 p-4">
-									<h3 class="mb-4 mt-md-4">REACH US AT</h3>
-				        	<div class="dbox w-100 d-flex align-items-start">
-				        		<div class="icon d-flex align-items-center justify-content-center">
-				        			<span class="fa fa-map-marker"></span>
-				        		</div>
-				        		<div class="text pl-3">
-					            <p><span>Address:</span> College of Engineering Guindy, Anna University</p>
-					          </div>
-				          </div>
-				        	<div class="dbox w-100 d-flex align-items-center">
-				        		<div class="icon d-flex align-items-center justify-content-center">
-				        			<span class="fa fa-phone"></span>
-				        		</div>
-				        		<div class="text pl-3">
-					            <p><span>Phone:</span> <a href="tel://1234567920">+91 </a></p>
-					          </div>
-				          </div>
-				        	<div class="dbox w-100 d-flex align-items-center">
-				        		<div class="icon d-flex align-items-center justify-content-center">
-				        			<span class="fa fa-paper-plane"></span>
-				        		</div>
-				        		<div class="text pl-3">
-					            <p><span>Email:</span> <a href="mailto:info@yoursite.com">acmceg2019@gmail.com</a></p>
-					          </div>
-				          </div>
-				        	<div class="dbox w-100 d-flex align-items-center">
-				        		<div class="icon d-flex align-items-center justify-content-center">
-				        			<span class="fa fa-globe"></span>
-				        		</div>
-				          </div>
-			          </div>
-							</div>
-						</div>
-					</div>
+
+		</div>
+	</div>
+<!-- ======= Footer ======= -->
+<footer id="footer">
+	<div class="footer-top">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-md-6 footer-links">
+					<h4>Links</h4>
+					<ul>
+						<li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
+						<li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>
+						<li><i class="bi bi-chevron-right"></i> <a href="#">Team</a></li>
+						<li><i class="bi bi-chevron-right"></i> <a href="#">Events Schedule</a></li>
+						<li><i class="bi bi-chevron-right"></i> <a href="#">Gallery</a></li>
+					</ul>
 				</div>
+					<div class="col-lg-3 col-md-6 footer-contact">
+						<h4>Contact Us</h4>
+						<p>
+							Somewhere <br>
+							north pole, 000000 <br>
+							mars <br>
+							<strong>Phone:</strong> +000000000000<br>
+							<strong>Email:</strong> something@.com<br>
+						</p>
+					
+						<div class="social-links">
+							<a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+							<a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+							<a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+							<a href="#" class="google-plus"><i class="bi bi-instagram"></i></a>
+							<a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+						</div>
+
+					</div>
+
+				</div>
+				</div>
+				</div>
+		<div class="container">
+			<div class="copyright">
+				&copy; Copyright <strong>ACM CEG</strong>. All Rights Reserved
 			</div>
 		</div>
-	</section>
-  
-<!-- end of contact section -->
+	</footer><!-- End  Footer -->
+	
+	<!--   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a> -->
 
-    <script src="assets/jquery/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/jquery.cookie/jquery.cookie.js"> </script>
-    <script src="assets/jquery.counterup/jquery.counterup.js"></script>
+	<script src="assets/aos/aos.js"></script>
+	<script src="assets/glightbox/js/glightbox.min.js"></script>
+	<script src="assets/swiper/swiper-bundle.min.js"></script>
+
+	<script src="assets/jquery/jquery.min.js"></script>
+	<script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script src="assets/jquery.cookie/jquery.cookie.js"> </script>
+	<script src="assets/jquery.counterup/jquery.counterup.js"></script>
 
 
 
-    <script>
-        $(document).ready(function () {
-            //Preloader
-            preloaderFadeOutTime = 5000;
-            function hidePreloader() {
-                var preloader = $('.spinner-wrapper');
-                preloader.fadeOut(preloaderFadeOutTime);
-            }
-            hidePreloader();
-        });
-    </script>
+	<script>
+			$(document).ready(function () {
+				//Preloader
+				preloaderFadeOutTime = 5000;
+				function hidePreloader() {
+					var preloader = $('.spinner-wrapper');
+					preloader.fadeOut(preloaderFadeOutTime);
+				}
+				hidePreloader();
+			})
+	</script>
 </body>
 
 </html>
