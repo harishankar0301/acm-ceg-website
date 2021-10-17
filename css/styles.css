@@ -1,0 +1,144 @@
+.spinner {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+  
+    position: absolute;
+    top: 48%;
+    left: 48%;
+    -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
+    animation: sk-rotateplane 1.2s infinite ease-in-out;
+  }
+  
+  @-webkit-keyframes sk-rotateplane {
+    0% { -webkit-transform: perspective(120px) }
+    50% { -webkit-transform: perspective(120px) rotateY(180deg) }
+    100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
+  }
+  
+  @keyframes sk-rotateplane {
+    0% { 
+      transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+      -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg) 
+    } 50% { 
+      transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+      -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg) 
+    } 100% { 
+      transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+      -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    }
+  }
+  .spinner-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ff6347;
+    z-index: 999999;
+    }
+.spinner-wrapper h1{
+    
+    position: absolute;
+    top: 60%;
+    left: 35%;
+    font-size: 100px;
+    color: transparent;
+    -webkit-text-stroke: 1px blue;
+    background: url(../img/back.png);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 20s linear infinite;
+}
+.example {
+cursor: pointer;
+height: 200px;
+position: relative;
+overflow: hidden;
+width: 100%;
+text-align:center;
+}
+.example .fadedbox {
+background-color: #666666;
+position: absolute;
+top: 0;
+left: 0;
+color: white;
+-webkit-transition: all 300ms ease-out;
+-moz-transition: all 300ms ease-out;
+-o-transition: all 300ms ease-out;
+-ms-transition: all 300ms ease-out;
+transition: all 300ms ease-out;
+opacity: 0;
+width: 100%;
+height: 200px;
+/* padding: 130px 20px; */
+}
+.example:hover .fadedbox { opacity: 0.8; }
+.example .text a{
+-webkit-transition: all 300ms ease-out;
+-moz-transition: all 300ms ease-out;
+-o-transition: all 300ms ease-out;
+-ms-transition: all 300ms ease-out;
+transition: all 300ms ease-out;
+transform: translateY( 0px);
+-webkit-transform: translateY(0px);
+}
+.example .title1 a {
+font-size: 1em;
+text-transform: uppercase;
+text-align:center;
+color: white !important;
+opacity: 0;
+transition-delay: 0.2s;
+transition-duration: 0.3s;
+}
+.example:hover .title1 a
+.example:focus .title1 {
+opacity: 1;
+transform: translateY(0px);
+-webkit-transform: translateY(0px);
+}
+.title1 text{
+    margin-top: 30px;
+}
+
+#intro h1{
+    font-size: 60px;
+    color: transparent;
+    -webkit-text-stroke: 1px #ffea00;
+    background: url(../img/back.png);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 20s linear infinite;
+}
+@keyframes back{
+100%{
+    background-position: 2000px 0;
+}
+}
+
+
+.tech .card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+}
+@media only screen and (max-width: 600px){
+
+  html,body
+{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+.spinner-wrapper h1{
+  font-size: 40px;
+  left: 25%;
+
+} 
+
+#intro h1{
+  font-size: 30px;
+}
+}
+
